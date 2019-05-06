@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header_main">
+            <a href="#" class="header_logo"><img src="http://www.gjw.com/Images/logo1.jpg"></a>
+            <div class="welcome">
+                您好，欢迎光临购酒网!
+                <a href="#"><i class="set"></i>帮助</a>
+                <a href="#" class="red"><i class="service"></i>在线客服</a>
+            </div>
+        </div>
+    </div>
+    <!-- 中间主体 -->
+    <div class="content">
+        <div class="content_main">
+            <div class="register_box">
+                <div class="register_form">
+                    <ul class="register_form_btn">
+                        <li class="active">
+                            <a href="#"><i class="shouji_icon"></i>手机注册</a>
+                            <div class="redtiao"></div>
+                        </li>
+                    </ul>
+                    <div class="from_box">
+                        <form method="post" action="/login/register" onsubmit="return false;" class="register_inner">
+                            <div class="register_inner_from">
+                                <div class="text_box">
+                                    <label for="">
+                                        手机号 :</label>
+                                    <input type="text" id="mob" name="mob" data-id="手机号" class=" txtInput">
+                                </div>
+
+                                <div>
+                                    <div class="text_box  codeText_s fl">
+                                        <label for="">
+                                            验证码 :</label>
+                                        <input type="text" id="codeForMob" data-id="验证码" name="codeForMob">
+                                    </div>
+                                    <img src="../img/verifycode.jpg">
+                                    <a href="#">换一张</a>
+                                </div>
+
+                                <div class="text_box">
+                                    <label for="">
+                                        校验码 :</label>
+                                    <input type="text" id="valiCode" name="valiCode" class="codeText">
+                                    <i class="mobileIcon"></i>
+                                    <a class="regCodeBtn btn">获取校验码</a>
+                                </div>
+
+                                <div class="text_box">
+                                    <label for="">
+                                        设置密码 :</label>
+                                    <input type="password" id="passwordA" name="passwordA" data-id="密码" placeholder=" " class=" txtInput">
+                                </div>
+
+                                <div class="text_box">
+                                    <label for="">
+                                        确认密码 :</label>
+                                    <input type="password" id="passwordA2" name="passwordA2" data-id="密码" class="phonePwd">
+                                </div>
+                                <p class="xieyi">
+                                    点击注册，表示您同意购酒网 <a class="blue" href="http://www.gjw.com/help/show-id-47.htm" target="_blank">《服务协议》</a></p>
+                                <button type="submit" class="btnSubmit regBtn phoneReg">
+                                        注&nbsp;册</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <a href="#" class="register_pic_right"><img src="http://img0.gjw.com/Famous/2019/0505/c80da68f922a4fce91f2227fda30a301.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="links">
+            <a href="#">关于我们</a> <span>|</span>
+            <a href="#">联系我们</a> <span>|</span>
+            <a href="#">友情链接</a> <span>|</span>
+            <a href="#">隐私声明</a>
+        </div>
+        <div>
+            Copyright©2009-2019 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</div>
+    </div>
+</body>
+
+</html>
