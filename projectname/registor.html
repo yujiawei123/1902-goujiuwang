@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册 - 购酒网</title>
+    <link rel="stylesheet" type="text/css" href="http://10.31.163.77/projectname/src/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="http://10.31.163.77/projectname/src/css/registor.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header_main">
+            <a href="#" class="header_logo"><img src="http://www.gjw.com/Images/logo1.jpg"></a>
+            <div class="welcome">
+                如您已有账户 &nbsp;<a href="login.html" style="color:blue">请登录</a>
+                <a href="#"><i class="set"></i>帮助</a>
+                <a href="#" class="red"><i class="service"></i>在线客服</a>
+            </div>
+        </div>
+    </div>
+    <!-- 中间主体 -->
+    <div class="content">
+        <div class="content_main">
+            <div class="register_box">
+                <div class="register_form">
+                    <ul class="register_form_btn">
+                        <li class="active">
+                            <a href="#"><i class="shouji_icon"></i>手机注册</a>
+                            <div class="redtiao"></div>
+                        </li>
+                    </ul>
+                    <div class="from_box">
+                        <form method="post" action="http://10.31.163.77/projectname/php/registor.php" onsubmit="return false;" class="register_inner" id="form1">
+                            <div class="magauto">
+                                <p>
+                                    <label for="">手机号：</label><input type="text" name="tel" id="tel">
+                                    <label id="tel-error" class="error" for=""></label>
+                                </p>
+                                <p class="p2">
+                                    <label for="">验证码：</label><input type="text" name="yanzheng">
+                                    <img src="http://order.gjw.com/Order_Api/verifycode?dd=Fri%20May%2010%202019%2016%3A34%3A23%20GMT+0800%20%28%u4E2D%u56FD%u6807%u51C6%u65F6%u95F4%29">
+                                    <a href="#">换一张</a>
+                                </p>
+                                <p>
+                                    <label for="">效验码：</label><input type="text" name="xioayan" class="input3">
+                                    <a href="#" class="xiaoyan_a">获取效验码</a>
+                                </p>
+
+                                <p>
+                                    <label class="fwidth" for="password">设置密码：</label>
+                                    <input type="password" name="password" id="password" />
+                                    <label id="password-error" class="error" for=""></label>
+                                </p>
+                                <p>
+                                    <label class="fwidth" for="repass">确认密码：</label>
+                                    <input type="password" name="repass" id="repass" />
+                                    <label id="repass-error" class="error" for=""></label>
+                                </p>
+                                <p class="xieyi">
+                                    点击注册，表示您同意购酒网
+                                    <a class="blue" href="http://www.gjw.com/help/show-id-47.htm" target="_blank">《服务协议》</a>
+                                </p>
+                                <input type="submit" value="注册" name="submit" class="btnSubmit regBtn phoneReg">
+                            </div>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+            <a href="#" class="register_pic_right"><img src="http://img0.gjw.com/Famous/2019/0505/c80da68f922a4fce91f2227fda30a301.jpg"></a>
+        </div>
+    </div>
+    </div>
+
+    <script src="http://10.31.163.77/projectname/src/script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://10.31.163.77/projectname/src/script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //表单验证-用户名
+        $(function() {
+            $('#form1').validate({
+                rules: {
+                    tel: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 10,
+                        remote: { //将前端的name给后端
+                            url: "http://10.31.163.77/projectname/php/registor.php", //后台处理程序
+                            type: "post" //数据发送方式
+                        }
+                    },
+                    // tel: {
+                    //     required: true,
+                    //     minlength: 7
+                    // },
+                    submit: {
+                        required: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6
+                    },
+                    repass: {
+                        required: true,
+                        equalTo: '#password'
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: '用户名不能为空',
+                        minlength: '用户名不能小于2',
+                        maxlength: '用户名不能大于10',
+                        remote: '用户名已存在'
+                    },
+                    tel: {
+                        required: '手机号不能为空'
+
+                    },
+                    password: {
+                        required: '密码不能为空'
+                    },
+                    repass: {
+                        required: '密码重复不能为空'
+                    },
+                    submit: {
+                        required: '密码不能为空'
+                    },
+                    email: {
+                        required: '电子邮箱不能为空',
+                        email: '你输入的格式有误'
+                    }
+                }
+
+            });
+        });
+
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function(label) {
+                label.text('√').css('color', 'green').addClass('valid');
+            }
+        });
+    </script>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="links">
+            <a href="#">关于我们</a> <span>|</span>
+            <a href="#">联系我们</a> <span>|</span>
+            <a href="#">友情链接</a> <span>|</span>
+            <a href="#">隐私声明</a>
+        </div>
+        <div>
+            Copyright©2009-2019 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</div>
+    </div>
+</body>
+
+</html>

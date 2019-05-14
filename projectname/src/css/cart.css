@@ -1,0 +1,276 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-size: 14px; }
+
+.header {
+  width: 100%;
+  height: 28px;
+  background: #F7F7F7;
+  border: 1px solid #DADADA;
+  z-index: 100;
+  left: 0; }
+  .header .header_wauto {
+    height: 28px;
+    line-height: 28px;
+    width: 990px;
+    margin: 0 auto; }
+    .header .header_wauto .header_left {
+      width: 400px;
+      float: left; }
+      .header .header_wauto .header_left li {
+        float: left; }
+
+.header_left ul li a {
+  color: #666;
+  font-size: 12px;
+  margin: 0 3px; }
+
+.header_left ul li:first-child a {
+  color: #D5182A;
+  font-size: 14px; }
+
+.header_right {
+  float: right;
+  height: 28px; }
+  .header_right li {
+    float: left;
+    margin-left: 3px;
+    text-align: center;
+    height: 28px; }
+    .header_right li a {
+      color: #666;
+      font-size: 12px; }
+
+.header_right li:nth-child(5) a {
+  color: #cf0404;
+  font-size: 14px; }
+
+.header_right li:nth-child(6) a {
+  color: #cf0404;
+  font-size: 14px; }
+
+.cart_main {
+  height: auto;
+  margin: 0 auto;
+  width: 960px; }
+  .cart_main .cart_titlt {
+    height: 45px;
+    margin-top: 15px; }
+    .cart_main .cart_titlt h1 {
+      color: #666;
+      display: block;
+      height: 23px;
+      margin-top: 17px;
+      overflow: hidden;
+      text-indent: 5px;
+      width: 100px;
+      font-family: '微软雅黑';
+      font-size: 18px;
+      font-weight: 700;
+      float: left; }
+    .cart_main .cart_titlt .mianyunfei {
+      color: #333;
+      display: block;
+      font-family: Arial;
+      font-size: 12px;
+      margin: 0;
+      padding-left: 10px;
+      padding-top: 22px;
+      float: left; }
+      .cart_main .cart_titlt .mianyunfei b {
+        color: #CA0808;
+        font-weight: bold; }
+    .cart_main .cart_titlt .red_btn {
+      float: right;
+      background: url(http://static.gjw.com/order/cart/img/bg_new.gif) no-repeat;
+      background-position: 0 -102px;
+      height: 35px;
+      width: 124px;
+      display: block;
+      line-height: 20px;
+      text-indent: -99999px; }
+
+.cart_box {
+  border-color: #C90809 #EAEAEA #EAEAEA;
+  border-right: 1px solid #EAEAEA;
+  border-style: solid;
+  border-width: 2px 1px 1px;
+  height: auto; }
+  .cart_box dt {
+    border-bottom: 1px solid #EAEAEA;
+    color: #999;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    padding: 0; }
+    .cart_box dt input {
+      vertical-align: middle;
+      margin-left: 15px; }
+
+.cart_box dt span:nth-child(1) {
+  display: inline-block;
+  width: 113px;
+  text-align: left; }
+
+.cart_box dt span:nth-child(2) {
+  display: inline-block;
+  width: 315px;
+  text-align: left; }
+
+.cart_box dt span:nth-child(3) {
+  display: inline-block;
+  width: 80px; }
+
+.cart_box dt span:nth-child(4) {
+  display: inline-block;
+  width: 86px;
+  text-align: center; }
+
+.cart_box dt span:nth-child(5) {
+  display: inline-block;
+  width: 150px;
+  text-align: center; }
+
+.cart_box dt span:nth-child(6) {
+  display: inline-block;
+  width: 70px;
+  text-align: center; }
+
+.cart_box dt span:nth-child(6) {
+  display: inline-block;
+  width: 95px;
+  text-align: center; }
+
+.cart_goods {
+  display: block;
+  height: auto;
+  padding: 0 11px 5px; }
+
+.cart_info {
+  background-color: #FFF;
+  border-color: #EAEAEA;
+  border-right: 1px solid #EAEAEA;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  height: auto; }
+  .cart_info .cart_info_box dt {
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #EAEAEA;
+    color: #989898;
+    height: 42px;
+    padding: 0 15px; }
+    .cart_info .cart_info_box dt ul {
+      padding-top: 10px; }
+
+.cart_info dd {
+  height: auto; }
+
+.cart_sum {
+  line-height: 24px;
+  padding: 10px 20px 10px 0;
+  text-align: right; }
+  .cart_sum .cart_li .btn_all {
+    margin-left: 10px;
+    line-height: 30px;
+    float: left; }
+  .cart_sum .cart_li .cart_text {
+    margin-left: 30px;
+    line-height: 30px;
+    float: left; }
+    .cart_sum .cart_li .cart_text a {
+      color: #666; }
+  .cart_sum .cart_li font {
+    color: #CA0809;
+    font-size: 27px;
+    font-weight: 700; }
+
+.cart_btn {
+  height: 60px;
+  padding-top: 20px; }
+  .cart_btn .gono_btn {
+    float: left;
+    height: 35px;
+    width: 100px;
+    display: block;
+    line-height: 20px;
+    text-indent: -99999px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    background: url(http://static.gjw.com/order/cart/img/bg_new.gif) no-repeat;
+    background-position: -124px -102px;
+    color: #666; }
+  .cart_btn .tip {
+    background: url(http://static.gjw.com/order/cart/img/bg_new.gif) -423px -417px no-repeat;
+    float: left;
+    padding-left: 20px;
+    margin-left: 15px;
+    line-height: 35px; }
+  .cart_btn .check_btn_red {
+    float: right;
+    height: 35px;
+    width: 124px;
+    display: block;
+    line-height: 20px;
+    text-indent: -99999px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    background: url(http://static.gjw.com/order/cart/img/bg_new.gif) no-repeat;
+    background-position: 0 -102px; }
+
+.cart_footer {
+  background-color: #FAFAFA;
+  height: auto;
+  margin: 20px auto 0;
+  padding-top: 20px;
+  width: 960px; }
+  .cart_footer .links {
+    height: 32px;
+    line-height: 32px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; }
+    .cart_footer .links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #333333; }
+  .cart_footer .zhushi {
+    color: #999;
+    line-height: 22px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    text-align: center; }
+  .cart_footer .footer_last_pic {
+    text-align: center; }
+    .cart_footer .footer_last_pic .last_pic1 {
+      display: inline-block;
+      border: 1px solid #ccc;
+      width: 108px;
+      margin: 0 5px;
+      height: 40px;
+      background: url(http://static.gjw.com/order/cart/img/bg_index.png) no-repeat;
+      background-position: -208px -690px; }
+    .cart_footer .footer_last_pic .last_pic2 {
+      display: inline-block;
+      border: 1px solid #ccc;
+      width: 108px;
+      margin: 0 5px;
+      height: 40px;
+      background: url(http://static.gjw.com/order/cart/img/bg_index.png) no-repeat;
+      background-position: -205px -735px; }
+
+/*# sourceMappingURL=cart.css.map */

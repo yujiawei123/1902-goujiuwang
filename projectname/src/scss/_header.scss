@@ -1,0 +1,403 @@
+@charset "utf-8";
+$width:200px;
+$height:200px;
+$font-size:14px;
+$bg:blue;
+
+/* 顶部导航1122111*/
+
+.topnav {
+    width: 100%;
+    height: $height - 169;
+    background: #3E3A39;
+    line-height: 30px;
+    font-size: $font-size - 1;
+    color: #CCC;
+    .topnav_box {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.topnav_box_log {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    img {
+        width: $width - 188;
+        height: $height - 188;
+        transition: all 1s;
+    }
+    em {
+        vertical-align: bottom;
+        line-height: 35px;
+        display: inline-block;
+        height: 30px;
+        font-style: normal;
+        transition: all 1s;
+    }
+    .erweima {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        background: #fff;
+        padding: 4px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+        z-index: 99999;
+        width: 200px;
+        height: 200px;
+        display: none;
+        .sanjiao {
+            z-index: 9;
+            left: 5px;
+            top: -7px;
+            color: #fff;
+            position: absolute;
+            right: -8px;
+            width: 38px;
+            height: 38px;
+            line-height: 16px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+.topnav_box_log:hover .erweima {
+    display: block;
+}
+
+.topnav_box_log:hover img {
+    transform: rotate(180deg)
+}
+
+.topnav_box_log:hover em {
+    transform: rotate(180deg)
+}
+
+.topnav_box_right {
+    width: $width+650;
+    float: right;
+    .list_ts {
+        float: left;
+        em {
+            font-style: normal;
+        }
+        a {
+            color: #FFF600;
+            margin: 0 3px;
+        }
+    }
+    .list {
+        float: left;
+        color: #CCC;
+        transition: all 1s em {
+            font-style: normal;
+        }
+        a {
+            color: #CCC;
+            padding: 0 20px;
+        }
+    }
+    .line {
+        margin-top: 9px;
+        height: 12px;
+        width: 1px;
+        background: #ddd;
+        float: left;
+    }
+}
+
+.topnav_box_right .list:hover {
+    opacity: 0.7;
+}
+
+.topnav_box_right .list_ts a:hover {
+    opacity: 0.7;
+}
+
+
+/*顶部大广告*/
+
+.topbigpic {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+/*图标、搜索框、购物车*/
+
+.topitem {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 10px 0;
+    height: 90px;
+    .toplog1 img {
+        margin-top: 26px;
+        margin-right: 25px;
+        float: left;
+    }
+    .toplog2 img {
+        margin: 20px 0 0 20px;
+        float: left;
+    }
+    .topsearch {
+        width: 450px;
+        margin: 24px 0 0 80px;
+        height: auto;
+        float: left;
+        .search {
+            input {
+                width: 350px;
+                height: 33px;
+                line-height: 33px;
+                text-indent: 10px;
+                border: 3px solid #c40000;
+                font-size: 14px;
+                float: left;
+            }
+            .topsearchbtn {
+                width: 86px;
+                height: 39px;
+                background: #c40000;
+                color: #fff;
+                line-height: 39px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                float: left;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.hot_search ul {
+    float: left;
+    li {
+        float: left;
+        a {
+            margin-top: 45px;
+            padding: 0 8px;
+            font-size: 12px;
+            border-right: 1px solid #ccc;
+            color: #E17F7F;
+        }
+    }
+}
+
+.topshopcar {
+    margin-top: 24px;
+    margin-right: 25px;
+    float: right;
+    .shopcarbox {
+        position: relative;
+        width: 139px;
+        height: 34px;
+        font-size: 13px;
+        background: #f9f9f9;
+        border: 1px solid #dfdfdf;
+        line-height: 34px;
+        text-align: center;
+        a {
+            color: #666;
+            font-size: $font-size;
+            em {
+                background: url(../img/shopcar.png);
+                width: 27px;
+                height: 27px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 5px;
+                font-style: normal;
+            }
+            .rtjt {
+                font-weight: 900;
+                font-size: 20px;
+            }
+            .itemNum {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: url(../img/qipao.png);
+                color: #FFF;
+                top: -20px;
+                left: 3px;
+                line-height: 29px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.shopcarbox span:hover {
+    color: red;
+}
+
+
+/* 商品导航*/
+
+.mainnav {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: $font-size+1;
+    color: #333;
+    height: 45px;
+    .mainlist {
+        height: 45px;
+        float: left;
+        li {
+            float: left;
+            padding: 0 25px;
+            height: 45px;
+            line-height: 45px;
+            a {
+                color: #333;
+                font-size: $font-size+1;
+            }
+        }
+    }
+}
+
+.mainlist li:hover a {
+    color: red;
+}
+
+#listnav {
+    padding: 0;
+    width: 185px;
+    background: #CC0210;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    a {
+        color: #FFF;
+        font-size: 18px;
+    }
+    .main_left_nav {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        li {
+            width: 145px;
+            height: 47px;
+            background: rgba(204, 2, 16, .9);
+            padding: 0 20px;
+            position: relative;
+            a {
+                width: 146px;
+                text-align: left;
+                display: inline-block;
+                height: 48px;
+                text-indent: .6em;
+                font-size: 16px;
+                position: relative;
+            }
+        }
+    }
+}
+
+.main_left_nav .yjxg_box {
+    width: 1020px;
+    height: 470px;
+    position: absolute;
+    background: #FFF;
+    left: 185px;
+    top: 0;
+    border-top: 1px solid #E5E5E5;
+    display: none;
+    .yjxg_box_left {
+        width: 730px;
+        padding-left: 10px;
+        height: 425px;
+        float: left;
+        .yjxg_tit {
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            border-bottom: 1px solid #EAEAEA;
+            text-align: left;
+            color: #3B3B3B;
+            font-weight: 900;
+        }
+    }
+    .yjxg_box_right {
+        width: 280px;
+        height: 470px;
+        background: #F6F6F6;
+        padding: 19px 17px;
+        box-sizing: border-box;
+        float: left;
+        .yjxg_box_right_picbox {
+            border: 1px solid #EAEAEA;
+            width: 242px;
+            a {
+                width: 80px;
+                height: 80px;
+                display: inline-block;
+                float: left;
+                border-right: 1px solid #EAEAEA;
+                border-bottom: 1px solid #EAEAEA;
+                font-style: normal;
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+
+.yjxg_box .yjxg_text {
+    padding-top: 20px;
+    .yjxg_text_a {
+        padding: 0 10px;
+        border-left: 1px solid #BFBFBF;
+        margin-bottom: 15px;
+        color: #595959;
+        font-size: 14px;
+        float: left;
+        line-height: 15px;
+        z-index: 234;
+    }
+}
+
+.yjxg_box_right_picbox a img {
+    width: 80px;
+    height: 80px;
+    border: 0;
+}
+
+.main_left_nav li:hover .yjxg_box {
+    display: block;
+}
+
+.main_left_nav li:hover .pic_right_show {
+    display: none;
+}
+
+.main_left_nav li img {
+    margin-top: 11px;
+    float: left;
+    margin-left: 10px;
+    margin-right: -5px;
+}
+
+.main_left_nav li em {
+    position: absolute;
+    color: rgba(255, 255, 255, .3);
+    right: 20px;
+    top: -2px;
+    font-size: 35px;
+    font-style: normal;
+    z-index: 2000;
+}
+
+.mainnav_right {
+    float: right;
+}

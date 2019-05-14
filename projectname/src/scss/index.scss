@@ -1,0 +1,395 @@
+@charset "utf-8";
+@import "header";
+$width:200px;
+$height:200px;
+$font-size:14px;
+$bg:blue;
+
+/*商品分类、图片展示*/
+
+
+/*轮播图*/
+
+.lunbo_background .lunbo_box {
+    border-bottom: 1px solid #EAEAEA;
+    width: 100%;
+    .lunbo_pics {
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        height: 470px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        .lunbo_pic {
+            width: 100%;
+            float: left;
+            min-height: 470px;
+            z-index: 2;
+        }
+    }
+}
+
+.lunbo_pics .lunbo_pic img {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    height: 470px;
+}
+
+
+/*轮播右侧固定图*/
+
+.pic_right_position {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: 410px;
+    z-index: 2;
+    transition: all 1s;
+    .pic_right_show {
+        width: 190px;
+        height: 470px;
+        overflow: hidden;
+        opacity: 0.9;
+        img {
+            width: 190px;
+            height: 210px;
+            display: block;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            opacity: .8;
+            transition: all 1s;
+            z-index: 6333;
+        }
+    }
+}
+
+
+/*轮播索引*/
+
+.lunbo_index_position .active {
+    background: red!important;
+    z-index: 12;
+}
+
+.lunbo_index_box {
+    width: 1200px;
+    margin: 0 auto;
+    height: 470px;
+    position: relative;
+    .lunbo_index_position {
+        height: 31px;
+        position: absolute;
+        top: 93%;
+        z-index: 6;
+        width: 1200px;
+        text-align: center;
+        cursor: pointer;
+        span {
+            width: 20px;
+            height: 20px;
+            border-radius: 15px;
+            background: #000;
+            display: inline-block;
+            opacity: .7;
+            margin-right: 10px;
+            box-shadow: 0 0 4px 1px #fff;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            font-size: 15px;
+        }
+    }
+    .lunbo_btn-left {
+        left: 185px;
+        background: url(../img/icon-slides.png) 83px 100%;
+        position: absolute;
+        top: 45%;
+        height: 69px;
+        width: 41px;
+        z-index: 6;
+        right: auto;
+        display: none;
+    }
+    .lunbo_btn-right {
+        right: 190px;
+        background: url(../img/icon-slides.png) 41px 100%;
+        position: absolute;
+        top: 45%;
+        height: 69px;
+        width: 41px;
+        z-index: 6;
+        display: none;
+    }
+}
+
+.nav_note {
+    height: 45px;
+    margin: 0 auto;
+    line-height: 45px;
+    color: #9B9B9B;
+    width: 1200px;
+    font-size: 14px;
+    .nav_note_png {
+        padding: 0 40px;
+        float: left;
+        vertical-align: middle;
+        img {
+            vertical-align: middle;
+        }
+    }
+    .nav_note_pic {
+        color: #E01F35;
+        font-size: 13px;
+        padding: 0 10px;
+        float: right;
+        vertical-align: middle;
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+
+/*商品栏 */
+
+.content {
+    background: url(../img/bj.jpg) no-repeat center;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 691px;
+    overflow: hidden;
+    .content_box {
+        width: 1200px;
+        margin: 25px auto 0;
+        ul li {
+            background: #FFF;
+            float: left;
+            height: 320px;
+            border: 1px solid #EDEDF1;
+            margin-right: 12px;
+            transition: all .5s;
+            position: relative;
+            top: 0;
+            a {
+                color: #000;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+.content_box img {
+    height: 260px;
+    border: 0;
+}
+
+// .content_box .list a .describe {
+//     .wenzilist {
+//         width: 420px;
+//         text-overflow: ellipsis;
+//         white-space: nowrap;
+//         overflow: hidden;
+//         line-height: 56px;
+//         text-indent: 1em;
+//         float: left;
+//         display: inline;
+//     }
+//     .jiagelist {
+//         padding-right: 1em;
+//         color: #A10000;
+//         line-height: 56px;
+//         text-indent: 1em;
+//         float: right;
+//         display: inline;
+//     }
+// }
+.content_box .describe {
+    .wenzili {
+        width: 180px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 56px;
+        text-indent: 1em;
+        float: left;
+        display: inline;
+    }
+    .jiageli {
+        padding-right: 1em;
+        color: #A10000;
+        line-height: 56px;
+        text-indent: 1em;
+        float: right;
+        display: inline;
+    }
+}
+
+.content_box li img {
+    height: 260px;
+    border: 0;
+}
+
+.content_box li:hover {
+    margin-top: -5px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+}
+
+.content_box ul:last-child {
+    margin-top: 22px;
+    display: block;
+}
+
+.content_box ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* 产品展示区域*/
+
+.Product_display_area .maotai_box {
+    width: 1200px;
+    margin: 25px auto 0;
+    background: #ddd;
+    .maotai_box_tit {
+        width: 1180px;
+        height: 58px;
+        color: #333;
+        line-height: 58px;
+        span {
+            font-size: 20px;
+            text-indent: 3px;
+            float: left;
+            display: block;
+        }
+        a {
+            font-size: 16px;
+            transition: all .4s;
+            float: right;
+            display: block;
+            color: #333;
+            em {
+                font-style: normal;
+                width: 20px;
+                height: 20px;
+                background: #cccccc;
+                padding: 0 3px;
+                color: #FFF;
+                transition: all .4s;
+                border-radius: 50%;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.maotai_box_main {
+    position: relative;
+    height: 650px;
+    .maotai_box_main_left {
+        width: 239px;
+        float: left;
+        a {
+            height: 300px;
+            top: 0;
+            background: #FFF;
+            transition: all .5s;
+            position: relative;
+            img {
+                display: inline;
+            }
+        }
+    }
+    .maotai_box_main_right {
+        width: 944px;
+        float: right;
+        ul {
+            li {
+                height: 300px;
+                margin-right: 17px;
+                float: left;
+                width: 219px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.maotai_box_main::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.maotai_box_main_right a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: all .5s;
+    .item-style {
+        background: #FF2D32;
+        width: 64px;
+        margin: 0 auto 10px;
+        text-align: center;
+        color: #FFF;
+        line-height: 20px;
+        font-size: 13px;
+        height: 20px;
+    }
+    img {
+        height: 190px;
+        border: 0;
+    }
+    .item-name {
+        color: #333;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 13px;
+        height: 20px;
+    }
+    .item-pri {
+        color: #FF2C00;
+        font-size: 13px;
+        padding: 3px 0;
+    }
+}
+
+.maotai_box_main_left li:first-child {
+    margin-bottom: 12px;
+}
+
+.maotai_box_main_left li {
+    width: 240px;
+    margin-bottom: 12px;
+    transition: all .5s;
+}
+
+// .maotai_box_main_right ul {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 944px;
+// }
+.maotai_box_main_left ul li:hover a {
+    margin-top: -10px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+}
+
+.maotai_box_main_right a:hover {
+    margin-top: -5px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+}
+
+@import "footer";

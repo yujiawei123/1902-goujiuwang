@@ -1,0 +1,128 @@
+@charset "utf-8";
+$width:200px;
+$height:200px;
+$font-size:14px;
+$bg:blue;
+
+/* 尾部*/
+
+.footer .footer_main {
+    height: 343px;
+    background: url(../img/footer_Bg.gif);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .7);
+    .footer_main_top {
+        margin: 0 auto;
+        padding-top: 7px;
+        width: 1150px;
+        height: 113px;
+        border-bottom: 2px solid #787878;
+        .footer_main_top_tel {
+            margin-top: 20px;
+            width: 301px;
+            height: 75px;
+            background: url(../img/tel.png) left top no-repeat;
+            float: left;
+        }
+        .footer_main_top_weixin {
+            margin: 61px 0 0 30px;
+            float: left;
+        }
+    }
+}
+
+.footer_main_top_right {
+    float: right;
+    .jianjie {
+        margin-right: 20px;
+        margin-top: 15px;
+        color: #fff;
+        text-align: right;
+        float: left;
+    }
+    img {
+        width: 104px;
+        height: 104px;
+        float: left;
+    }
+}
+
+.footer_main_bottom {
+    margin: 0 auto;
+    width: 1150px;
+    dl {
+        float: left;
+        width: 170px;
+        dt {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
+
+.firstdl {
+    margin-left: 100px;
+}
+
+dd a {
+    line-height: 24px;
+    color: #a9a9a9;
+    font-size: $font-size - 1;
+}
+
+.footer_last {
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 83px;
+    background: url(http://static.gjw.com/product/20161021/img/baozheng_06.jpg) center top no-repeat;
+    line-height: 24px;
+    text-align: center;
+    .footer_last_pic {
+        margin-top: 10px;
+        .last_pic1 {
+            display: inline-block;
+            width: 110px;
+            height: 48px;
+            background: url(http://static.gjw.com/product/20161021/img/aut_06.jpg) no-repeat;
+        }
+        .last_pic2 {
+            display: inline-block;
+            width: 110px;
+            height: 48px;
+            background: url(http://static.gjw.com/product/20161021/img/aut_06.jpg) no-repeat;
+            background-position: -120px 0;
+        }
+        .last_pic3 {
+            display: inline-block;
+            width: 110px;
+            height: 48px;
+            background: url(http://static.gjw.com/product/20161021/img/aut_06.jpg) no-repeat;
+            background-position: -240px 0;
+        }
+    }
+}
+
+
+/* 右侧导航*/
+
+.rightnavbox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 100%;
+    background: #eaeaea;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+    .rightnavbox_text {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -216px;
+        width: 32px;
+        height: 432px;
+        background: red;
+    }
+}
